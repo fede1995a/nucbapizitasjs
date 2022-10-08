@@ -105,3 +105,18 @@ body {
 .categoria imagen{
     width: 150px;
 }
+.popularesContainer{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+max-width: 2000px;
+flex-wrap: wrap;
+gap: 2rem;
+margin: 50px;
+
+}
+.popular{
+    width: 400px;
+
+}
