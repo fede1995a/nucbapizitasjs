@@ -88,3 +88,20 @@ body {
     top: 10.42%;
     bottom: 27.13%;
 }
+.categoriaContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.categoria{
+    /* background-color: white; */
+    /* color: black; */
+    width: 150PX;
+    height: 150px;
+    border: solid 5px red;
+}
+.categoria imagen{
+    width: 150px;
+}
