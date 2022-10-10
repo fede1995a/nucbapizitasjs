@@ -1,5 +1,50 @@
 const categoria=document.getElementById('categorias');
 const populares=document.getElementById('populares');
+const recomendados=document.getElementById('recomendados');
+
+
+// array de la seccion de "Hoy te recomendamos"
+
+let recomendadosArray = [
+    {
+      imagen: './assets/hero/bennaziana.png',
+      nombre: 'Bennazianna',
+      descripcion: 'La más completa',
+      precio: '3650',
+    },
+    {
+        imagen: './assets/hero/tronco-pizza.png',
+        nombre: 'Tronco_Pizza',
+        descripcion: 'Para todo el dia',
+        precio: '870',
+    },
+    {
+        imagen: './assets/hero/papas-provenzal.png',
+        nombre: 'Papas | Provenzal',
+        descripcion: 'Van como piña',
+        precio: '360',
+    },
+];
+
+// renderizo la lista de los mas recomendados
+const renderRecomendados = recomendadosArray1 => {
+    
+    recomendados.innerHTML = recomendadosArray1.map(recomendados=>{
+      return`
+      <div class="recomendado">
+      <img src="${recomendados.imagen}" alt="${recomendados.nombre}">
+      <div class="recomendados__text">
+          <span class="recomendados__nombre">${recomendados.nombre}</span>
+          <span class="recomendados__descripcion">${recomendados.descripcion}</span>
+          <span class="recomendados__precio">$${recomendados.precio}</span>
+      </div>
+      <input type="submit" value="Agregar" class="submit__recomendados">
+  </div>
+     `
+ })
+    .join('');
+ }
+renderRecomendados(recomendadosArray);
 
 // array con los productos de categoria para despues renderizarlo
 
