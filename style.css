@@ -121,6 +121,7 @@ margin: 50px;
 
 }
 
+
       /* Hero */
 .hero {
     
@@ -321,4 +322,21 @@ background-clip: text;
 /* text-fill-color: transparent; */
 
  
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-weight: 400;
+    padding: 5vh;
+}
+
+.footer-list{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-list a{
+    color: white;
 }
