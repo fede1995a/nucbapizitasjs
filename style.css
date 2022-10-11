@@ -31,8 +31,12 @@ body {
     max-width: 1300px;
 }
 
+
+/* SECCION NAVBAR*/
+
 #togle-menu {
-    display: none
+    display: none;
+    visibility: hidden;
 }
 
 .header-container {
@@ -80,6 +84,15 @@ body {
     font-size: 12px;
     line-height: 131.02%;
 }
+
+
+/* .homelogo {
+    position: absolute;
+    left: 10.42%;
+    right: 10.42%;
+    top: 8.33%;
+    bottom: 8.33%;
+} */
 
 .carrito {
     position: absolute;
