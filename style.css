@@ -101,3 +101,53 @@ body {
     top: 10.42%;
     bottom: 27.13%;
 }
+.categoriaContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.categoria{
+    /* background-color: white; */
+    /* color: black; */
+    width: 150PX;
+    height: 150px;
+    border: solid 5px red;
+}
+.categoria imagen{
+    width: 150px;
+}
+.popularesContainer{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+max-width: 2000px;
+flex-wrap: wrap;
+gap: 2rem;
+margin: 50px;
+
+}
+.popular{
+    width: 400px;
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-weight: 400;
+    padding: 5vh;
+}
+
+.footer-list{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-list a{
+    color: white;
+}
