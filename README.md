@@ -5,4 +5,3 @@ Integrantes del grupo:
 -Ignacio lavigne
 -Marcos Pedriel
 -Valentin Palmas
--Julian 

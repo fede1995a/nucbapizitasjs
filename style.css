@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 * {
     margin: 0;
@@ -17,8 +18,16 @@
 }
 
 body {
-    background-color: var(--black);
+    background-color: #131415;
     color: var(--white);
+}
+
+/* Estilo para todos los input del tipo submit */
+input[type="submit"] {
+    padding: 9px 25px;
+    color: var(--white);
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+    border-radius: 17.5px;
 }
 
 .section {
@@ -74,7 +83,7 @@ body {
 } */
 
 .home {
-    position: absolute;
+    /* position: absolute; */
     width: 38px;
     height: 16px;
     left: 1215px;
@@ -95,7 +104,7 @@ body {
 } */
 
 .carrito {
-    position: absolute;
+    /* position: absolute; */
     left: 8.33%;
     right: 8.27%;
     top: 10.42%;
@@ -104,178 +113,304 @@ body {
 .categoriaContainer{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-evenly;
     align-items: center;
-
+    flex-wrap: wrap;
+    gap:40px;
+    margin: 50px 50px;
 }
 .categoria{
     /* background-color: white; */
     /* color: black; */
     width: 150PX;
     height: 150px;
-    border: solid 5px red;
+    /* border: solid 5px red; */
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
-.categoria imagen{
+.categoria {
     width: 150px;
-}
-.popularesContainer{
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-max-width: 2000px;
-flex-wrap: wrap;
-gap: 2rem;
-margin: 50px;
-
-}
-.popular{
-    width: 400px;
+    background: #252525;
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px;
 
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+.categoria span {
+>>>>>>> estilo
 
-      /* Hero */
-.hero {
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.hero__title {
-    display: flex;
-    flex-direction: column;
-}
-
-.hero__title span {
-    /* Tiiitle Text */
-
-/* position: absolute; */
-width: 603px;
-height: 93px;
-left: 133px;
-top: 178px;
-
-/* font-family: 'Montserrat'; */
-font-style: normal;
-font-weight: 700;
-font-size: 66px;
-line-height: 131.02%;
-/* or 86px */
-
-color: #FFFFFF;
-
-
-}
-
-.subtitle {
-/* Tiiitle Text */
-
-/* position: absolute; */
-width: 639px;
-height: 118px;
-left: 133px;
-top: 263px;
-
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 51px;
-line-height: 131.02%;
-/* or 67px */
-
-color: #FFFFFF;
-
-display: flex;
-flex-direction: column;
-}
-
-.subtitle span {
-    font-size: 20px;
-    margin-top: 15px;
-    font-weight: 100;
-}
-
-/* Hero imagenes */
-.hero__img {
-    display: flex;
-    width: 460px;
-}
-
-.img__right {
-    /* image 34 */
- 
-width: 265px;
-height: 265px;
-left: 920px;
-top: 208px;
-margin: 0px;
-padding: 0%;
-
-
-/* background: url(image.png); */
-
-}
-
-.img__left {
-    /* pizza 1 */
-
-position: relative;
-width: -392px;
-height: -392px;
-left: -1046px;
-top: -94px;
-
-left: -150px;
-
-/* background: url(pizza.png); */
-
-}
-
-/* HeRo : Recomendados */
-.recomendados__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.recomendado {
-    /* background: #fc2933; */
-    display: flex;
-    gap: 20px;
-    padding: 10px;
-    /* Rectangle 13 */
-
-/* position: absolute; */
-width: 347px;
-height: 103px;
-left: 197px;
-top: 583px;
-
-/* background: #252525; */
+width: 24px;
+height: 4px;
+/* linear-primary */
+background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
 box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
 border-radius: 15px;
 
 }
-
-.recomendados__text {
+.popularesContainer{
+   display: grid;
+   grid-template-columns: 1fr  1fr 1fr 1fr;
+   grid-gap: 90px;
+   margin: 0 auto;
+   /* background: #FFA100; */
+   max-width: 1400px;
+}
+.popular{
+    /* width: 400px; */
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 282px;
+    height: 213px;
+
+
+    background: #252525;
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px;
+
 }
 
-.recomendados__nombre {
-    /* Menu Name */
 
-/* position: absolute; */
-height: 20px;
-left: 19.21%;
-right: 74.11%;
-top: calc(50% - 20px/2 - 332.5px);
+     /* Hero */
+     .hero {
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .hero__title {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+    
+    .hero__title span {
+        /* Tiiitle Text */
+    
+    /* position: absolute; */
+    width: 603px;
+    height: 93px;
+    left: 133px;
+    top: 178px;
+    
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 900;
+    font-size: 66px;
+    line-height: 131.02%;
+    
+    
+    color: #FFFFFF;
+    
+    
+    }
+    
+    .subtitle {
+    /* Tiiitle Text */
+    
+    /* position: absolute; */
+    width: 639px;
+    height: 118px;
+    left: 133px;
+    top: 263px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 131.02%;
+    /* or 67px */
+    
+    color: #FFFFFF;
+    
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .subtitle span {
+        font-size: 20px;
+        margin-top: 15px;
+        font-weight: 100;
+    }
 
+    .hero__title input {
+        width: 166px;
+        height: 60px;
+        
+        background: linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
+      /* Drop Shadow */
+        box-shadow: 11px 28px 50px rgba(20, 78, 90, 0.2);
+        border-radius: 15px;
+
+    }
+    
+    /* Hero imagenes */
+    .hero__img {
+        display: flex;
+        width: 460px;
+    }
+    
+    .img__right {
+        /* image 34 */
+     
+    width: 265px;
+    height: 265px;
+    left: 920px;
+    top: 208px;
+    margin: 0px;
+    padding: 0%;
+    
+    
+    /* background: url(image.png); */
+    
+    }
+    
+    .img__left {
+        /* pizza 1 */
+    
+    position: relative;
+    width: -392px;
+    height: -392px;
+    left: -1046px;
+    top: -94px;
+    
+    left: -150px;
+    
+    /* background: url(pizza.png); */
+    
+    }
+    
+    /* HeRo : Recomendados */
+    .recomendados__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .recomendado {
+        
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-evenly;
+    
+        min-width: 370px;
+        height: 103px;
+    
+    
+        background: #252525;
+        box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+        border-radius: 15px;
+    
+    }
+
+    .encabezado {
+       width: 278px;
+       height: 23px;
+       margin-left: 10vw;
+       margin-top: 50px;
+       margin-bottom: 30px;
+       font-family: 'Montserrat';
+       font-style: normal;
+       font-weight: 800;
+       font-size: 22px;
+       line-height: 131.02%;
+       color: #FFFFFF;
+}
+
+
+ /* Estilo para todas las cards com img, descripcion , precio y nombre */
+    .box {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 15px;
+    }
+    
+    .text__box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 6px;
+    }
+    
+    .nombre {
+    height: 20px;
+    left: 19.21%;
+    right: 74.11%;
+    top: calc(50% - 20px/2 - 332.5px);
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 131.02%;
+    /* identical to box height, or 20px */
+    
+    color: #FFFFFF;
+    
+    
+    } 
+    
+    .descripcion {
+        /* Resaturant Name */
+    
+    /* position: absolute; */
+    height: 17px;
+    left: 19.21%;
+    right: 72.32%;
+    top: calc(50% - 17px/2 - 310px);
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    letter-spacing: 0.5px;
+    
+    color: #FFFFFf;
+    
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    
+    }
+    
+    .precio {
+       /* Priece */
+    
+    /* position: absolute; */
+    height: 25px;
+    left: 19.24%;
+    right: 76.4%;
+    top: calc(50% - 25px/2 - 284px);
+    
+    font-family: 'Montserrat';
+    /* font-style: normal; */
+    font-weight: 900;
+    font-size: 25px;
+    /* line-height: 131.02%; */
+    /* identical to box height, or 25px */
+    
+    /* linear-primary */
+    background: linear-gradient(98.81deg, #FFA100 -10.82%, #FF005C 101.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    
+     
+    }
+
+<<<<<<< HEAD
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 600;
@@ -339,6 +474,8 @@ background-clip: text;
 }
 =======
 >>>>>>> 80176baf2461522fec2f0e2eb258f14bce42c8bb
+=======
+>>>>>>> estilo
 .footer{
     display: flex;
     flex-direction: column;
@@ -355,4 +492,8 @@ background-clip: text;
 
 .footer-list a{
     color: white;
+}
+
+.corazon {
+    color: #FB103D;
 }

@@ -33,10 +33,10 @@ const renderRecomendados = recomendadosArray1 => {
       return`
       <div class="recomendado">
       <img src="${recomendados.imagen}" alt="${recomendados.nombre}">
-      <div class="recomendados__text">
-          <span class="recomendados__nombre">${recomendados.nombre}</span>
-          <span class="recomendados__descripcion">${recomendados.descripcion}</span>
-          <span class="recomendados__precio">$${recomendados.precio}</span>
+      <div class="text__box">
+          <span class="nombre">${recomendados.nombre}</span>
+          <span class="descripcion">${recomendados.descripcion}</span>
+          <span class="precio">$${recomendados.precio}</span>
       </div>
       <input type="submit" value="Agregar" class="submit__recomendados">
   </div>
@@ -80,7 +80,7 @@ let categoriaArray=[
     },
 ];
 
-//renderizo cstegoria
+//renderizo categoria
 const rendercategoria = categoriaArray1 => {
     
     categoria.innerHTML = categoriaArray1.map(categori=>{
@@ -89,6 +89,7 @@ const rendercategoria = categoriaArray1 => {
      
       <img src="${categori.imagen}" alt="">
      <h3>${categori.nombre}</h3>
+     <span></span>
      
      </div>
      `
@@ -152,7 +153,7 @@ let popularesArray=[
         imagen:'./assets/populares/nickgi.png',
         nombre:'Nick Gi',
         descripcion: 'La que desaparece',
-        precio: 'gratis',
+        precio: 'Gratis',
 
     },
 ];
@@ -162,14 +163,19 @@ let popularesArray=[
 const renderpopula = populares1 =>{
     populares.innerHTML= populares1.map(popular=>{
         return`
-        <div class="popular">
+     <div class="popular">
        
         <img src="${popular.imagen}" alt="">
-       <h2>${popular.nombre}</h2>
-       <spam>${popular.descripcion}</spam>
-       <h3> $ ${popular.precio}</h3>
+        <div class="box">
+          <div class="text__box">
+            <h2 class="nombre">${popular.nombre}</h2>
+            <spam class="descripcion">${popular.descripcion}</spam>
+            <span class="precio"> $ ${popular.precio}</span>
+          </div>
+          <input type="submit" value="Agregar">
+        </div>
        
-       </div>
+     </div>
        `
     })
     .join('');
