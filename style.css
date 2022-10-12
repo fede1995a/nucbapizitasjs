@@ -31,8 +31,12 @@ body {
     max-width: 1300px;
 }
 
+
+/* SECCION NAVBAR*/
+
 #togle-menu {
-    display: none
+    display: none;
+    visibility: hidden;
 }
 
 .header-container {
@@ -81,6 +85,15 @@ body {
     line-height: 131.02%;
 }
 
+
+/* .homelogo {
+    position: absolute;
+    left: 10.42%;
+    right: 10.42%;
+    top: 8.33%;
+    bottom: 8.33%;
+} */
+
 .carrito {
     position: absolute;
     left: 8.33%;
@@ -121,6 +134,7 @@ margin: 50px;
 
 }
 
+<<<<<<< HEAD
 
       /* Hero */
 .hero {
@@ -323,6 +337,8 @@ background-clip: text;
 
  
 }
+=======
+>>>>>>> 80176baf2461522fec2f0e2eb258f14bce42c8bb
 .footer{
     display: flex;
     flex-direction: column;
